@@ -1,38 +1,43 @@
 /* author: Sang Vo
 created: 22/07/22
-last modified: 30/07/22
+last modified: 6/12/22
 description: JavaScript file for index.html */
 
-
-// Quiz Platform
+// Project Array List
 let projects = [ {
   name: "Interactive Quiz Platform",
   image: "images/interactive_quiz.png",
   description: "Co-created an Interactive Quiz Platform that demonstrates a full-stack application. \
   Achieved HD through collaboration and implementation of the agile process. \
-  Integrated frameworks such as Bootstrap and Django. \
-  Built with React Native and hosted on Expo",
+  Integrated frameworks such as Bootstrap and Django.",
   link: "https://github.com/JATTYz/Quiz-Application-Django-Project",
   gitlink: "https://github.com/JATTYz/Quiz-Application-Django-Project"
 },
 {
-  name: "Random",
-  image: "images/interactive_quiz.png",
-  description: "xx. \
-  xx. \
-  xx. \
-  xx",
-  link: "https://github.com/JATTYz/Quiz-Application-Django-Project",
-  gitlink: "https://github.com/JATTYz/Quiz-Application-Django-Project"
+  name: "Portfolio Website",
+  image: "images/portfolio_website.png",
+  description: "Portfolio website demonstrating comprehension on front-end web development. \
+  Includes parallax scrolling, hamburger menu and dynamic cross device compatibility. \
+  Built with pure HTML/CSS/JS.", 
+  link: "https://sangvo235.github.io",
+  gitlink: "https://github.com/sangvo235/sangvo235.github.io"
+},
+{
+  name: "Dynamic Website",
+  image: "images/asp.net.png",
+  description: "Dynamic website implementing server-side PHP scripts to process and store quiz-attempt data.\
+  Additionally built in enhancements such as login for admin to sort, edit and delete quiz results illustrating MySQL knowledge.",
+  link: "",
+  gitlink: "https://github.com/sangvo235/ASP.NET_Website_PHP"
 }
 ]
+
+// creating project div
 var projectDiv = document.getElementById("projects");
-// console.log(projects[0]);
-// for(var i =0; i<projects.length; i++){
-//   console.log(projects[i]);
-// }
+
 for (const project of projects){
-  // wrapper div
+
+  // wrapper div - card
   var card = document.createElement("div");
   card.className = "card";
   // card.setAttribute("data-aos", "fade-down-right");
@@ -53,37 +58,38 @@ for (const project of projects){
   var descriptionBox = document.createElement("div");
   descriptionBox.className = "cardDescriptionBox";
   
+  // Appending card components 
   card.appendChild(title);
   card.appendChild(image);
   card.appendChild(descriptionBox);
+
+  // Appending card to project div
   projectDiv.appendChild(card)
 
+  // project description
   var description = document.createElement("p");
   description.textContent = project["description"];
 
+  // project link/demo
   var link = document.createElement("a");
   link.setAttribute("target", "_blank");
   link.href = project["link"];
   link.className = "fas fa-link";
   link.classList.add("cardLink")
 
+  // project github
   var gitLink = document.createElement("a");
   gitLink.setAttribute("target", "_blank");
   gitLink.href = project["gitlink"];
   gitLink.className = "fab fa-github";
   gitLink.classList.add("cardLink");
 
+  // Appending description box components
   descriptionBox.appendChild(description);
   descriptionBox.appendChild(link);
   descriptionBox.appendChild(gitLink);
 
-  projectDiv.appendChild(card);
-
-
-
-
 } 
-
 
 // Scrolling Logic for Nav Bar
 $(document).ready(function(){
@@ -151,13 +157,3 @@ document.querySelector(".card-btn").addEventListener
   document.querySelector(".about").classList.toggle("change");
 });
 
-
-
-
-// var projectDiv = document.getElementById("myProjects");
-
-// for (var key of Object.keys(projects)) {
-//     console.log("TEST");
-//   var project = projects[key];
-
- 

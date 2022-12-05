@@ -228,6 +228,7 @@ a {
 }
 
 /* Project Section Styling */
+
 .projects {
     width: 100%;
     background-color: #102044;
@@ -239,42 +240,61 @@ a {
     z-index: 2;
 }
 
-.projects h1 {
+.card {
     position: absolute;
-    top: 4.8rem;
-    font-size: 4rem;
-}
-
-.project-name {
-    position: absolute;
-    top: 15px;
-    display: block;
-}
-
-
-.image-wrapper2 {
-    width: 150rem;
-    height: 23rem;
-    display: block;
-    justify-content: center;    
-    border: 2px solid black;
+    top: 20%;
+    width: 30%;
+    min-height: 75%;
+    padding: 4rem 2rem 2rem 2rem;
+    display: flex;
+    background-color: white;
+    border: 10px solid #97ade6;
     border-radius: 4px;
+    box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.3);
 }
 
-.image-wrapper2 img {
+.card > h2 {
+    vertical-align: middle;
+    font-size: 5vmin;
+    font-weight: 100;
+    color: black;
+}
+
+.card > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.project-tech {
-    margin: 0.3em;
-    text-align: center;
+.cardDescriptionBox {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.project-tech img {
-    width: 50px;
-    height: 50px;
+.cardDescriptionBox > p {
+    max-height: 100%;
+    width: 70%;
+    font-size: 2vmin;
+    color: black;
+
+}
+
+.cardDescriptionBox > a {
+    height: auto;
+    width: 10%;
+    color: black;
+
+}
+
+.cardDescriptionBox > a > img {
+    width: 100%;
+    color: black;
+
 }
 
 /* Resizing some images to fit through using pseudo selector */
