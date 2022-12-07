@@ -230,71 +230,72 @@ a {
 /* Project Section Styling */
 
 .projects {
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;    
     background-color: #102044;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     min-height: 100vh;
+    height: 400vh;
     position: absolute;
     z-index: 2;
 }
 
-.card {
-    position: absolute;
-    top: 20%;
-    width: 30%;
-    min-height: 75%;
-    padding: 4rem 2rem 2rem 2rem;
+.pcard {
     display: flex;
     background-color: white;
+    flex-direction: column;
+    width: 80vmin;
+    height: 80vmin;
+    padding: 1vw 1vw 2vw 1vw;
     border: 10px solid #97ade6;
     border-radius: 4px;
     box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.3);
 }
 
-.card > h2 {
-    vertical-align: middle;
-    font-size: 5vmin;
-    font-weight: 100;
+.pcard > h2 {
+    display: block;
     color: black;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-.card > img {
+.pcard > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    justify-content: center;    
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.cardProjectTech {
+    margin: 0.3em;
+    text-align: center;
+}
+
+.cardProjectTech > img {
+    width: 50px;
+    height: 50px; 
 }
 
 .cardDescriptionBox {
     display: flex;
     flex-direction: row;
     height: auto;
-    padding: 5px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
 }
 
 .cardDescriptionBox > p {
     max-height: 100%;
-    width: 70%;
+    width: 90%;
     font-size: 2vmin;
     color: black;
-
-}
-
-.cardDescriptionBox > a {
-    height: auto;
-    width: 10%;
-    color: black;
-
-}
-
-.cardDescriptionBox > a > img {
-    width: 100%;
-    color: black;
-
 }
 
 /* Resizing some images to fit through using pseudo selector */
@@ -306,36 +307,37 @@ a {
     object-fit: scale-down;
 }
 
-.project-bio p {
-    color:black;
-}
-
-.project-bio .icon-wrapper {
+.cardLinkWrapper {
     gap: 50px;
-    margin: 1.7rem 0 0 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
-
-.project-bio .icon-wrapper i {
+.cardLinkWrapper > a {
     font-size: 3rem;
+}
+.cardLinkWrapper > a:first-child {
+    color:rgb(53, 141, 241);
+    gap:50px;
+}
+.cardLinkWrapper > a:nth-child(2) {
     color: black;
 }
-
-.project-bio .icon-wrapper h5 {
+.cardLinkWrapper > a > h3 {
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+.cardLinkWrapper > a:first-child > h3 {
+    color:rgb(53, 141, 241);
+}
+.cardLinkWrapper > a:nth-child(2) > h3 {
     color: black;
-    padding-top: 4px;
-}
-
-.project-bio .icon-demo i {
-    color:rgb(53, 141, 241);
-}
-
-.project-bio .icon-demo h5 {
-    color:rgb(53, 141, 241);
-}
+} 
 
 /* Logic for changing colours when hovering over text/icon
     Use !important to overide previous black/blue colour */
-.icon-wrapper i:hover, .icon-wrapper h5:hover {
+.cardLinkWrapper > a:hover, .cardLinkWrapper > a:hover > h3 {
     color: rgb(248, 203, 126) !important;
 }
 

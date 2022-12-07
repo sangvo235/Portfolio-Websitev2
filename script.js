@@ -11,16 +11,19 @@ let projects = [ {
   Achieved HD through collaboration and implementation of the agile process. \
   Integrated frameworks such as Bootstrap and Django.",
   link: "https://github.com/JATTYz/Quiz-Application-Django-Project",
-  gitlink: "https://github.com/JATTYz/Quiz-Application-Django-Project"
+  github: "https://github.com/JATTYz/Quiz-Application-Django-Project"
 },
 {
   name: "Portfolio Website",
   image: "images/portfolio_website.png",
+  tech: "images/html_logo.svg", 
+  tech1: "images/css_logo.svg",
+  tech2: "images/js_logo.svg",
   description: "Portfolio website demonstrating comprehension on front-end web development. \
   Includes parallax scrolling, hamburger menu and dynamic cross device compatibility. \
   Built with pure HTML/CSS/JS.", 
   link: "https://sangvo235.github.io",
-  gitlink: "https://github.com/sangvo235/sangvo235.github.io"
+  github: "https://github.com/sangvo235/sangvo235.github.io"
 },
 {
   name: "Dynamic Website",
@@ -28,7 +31,7 @@ let projects = [ {
   description: "Dynamic website implementing server-side PHP scripts to process and store quiz-attempt data.\
   Additionally built in enhancements such as login for admin to sort, edit and delete quiz results illustrating MySQL knowledge.",
   link: "",
-  gitlink: "https://github.com/sangvo235/ASP.NET_Website_PHP"
+  github: "https://github.com/sangvo235/ASP.NET_Website_PHP"
 }
 ]
 
@@ -38,13 +41,8 @@ var projectDiv = document.getElementById("projects");
 for (const project of projects){
 
   // wrapper div - card
-  var card = document.createElement("div");
-  card.className = "card";
-  // card.setAttribute("data-aos", "fade-down-right");
-  // card.setAttribute("data-aos-offset", "200");
-  // card.setAttribute("data-aos-delay", "50");
-  // card.setAttribute("data-aos-duration", "1000");
-  // card.setAttribute("data-aos-easing", "ease-in-out-sine");
+  var pcard = document.createElement("div");
+  pcard.className = "pcard";
 
   // project titles
   var title = document.createElement("h2");
@@ -54,40 +52,70 @@ for (const project of projects){
   var image = document.createElement("img");
   image.src = project["image"];
 
-  // project info
+  // project tech wrapper
+  var projectTech = document.createElement("div");
+  projectTech.className = "cardProjectTech";
+
+  // project tech
+  var tech = document.createElement("img");
+  tech.src = project["tech"];
+
+  var tech1 = document.createElement("img");
+  tech1.src = project["tech1"];
+
+  var tech2 = document.createElement("img");
+  tech2.src = project["tech2"];
+
+  // project desciption wrapper
   var descriptionBox = document.createElement("div");
   descriptionBox.className = "cardDescriptionBox";
-  
-  // Appending card components 
-  card.appendChild(title);
-  card.appendChild(image);
-  card.appendChild(descriptionBox);
-
-  // Appending card to project div
-  projectDiv.appendChild(card)
 
   // project description
   var description = document.createElement("p");
   description.textContent = project["description"];
 
-  // project link/demo
+  // project link wrapper
+  var linkWrapper = document.createElement("div");
+  linkWrapper.className = "cardLinkWrapper";
+
+  // project link
   var link = document.createElement("a");
   link.setAttribute("target", "_blank");
   link.href = project["link"];
   link.className = "fas fa-link";
-  link.classList.add("cardLink")
+  
+  var linkName = document.createElement("h3");
+  linkName.textContent = "Demo";
 
   // project github
-  var gitLink = document.createElement("a");
-  gitLink.setAttribute("target", "_blank");
-  gitLink.href = project["gitlink"];
-  gitLink.className = "fab fa-github";
-  gitLink.classList.add("cardLink");
+  var github = document.createElement("a");
+  github.setAttribute("target", "_blank");
+  github.href = project["github"];
+  github.className = "fab fa-github";
+  github.classList.add("cardLink");
 
-  // Appending description box components
+  var githubName = document.createElement("h3");
+  githubName.textContent = "Github";
+  
+  // Appending individual components  
+  projectTech.appendChild(tech);
+  projectTech.appendChild(tech1);
+  projectTech.appendChild(tech2);
   descriptionBox.appendChild(description);
-  descriptionBox.appendChild(link);
-  descriptionBox.appendChild(gitLink);
+  link.appendChild(linkName);
+  github.appendChild(githubName);
+  linkWrapper.appendChild(link);
+  linkWrapper.appendChild(github);
+
+  // Appending card components 
+  pcard.appendChild(title);
+  pcard.appendChild(image);
+  pcard.appendChild(projectTech);
+  pcard.appendChild(descriptionBox);
+  pcard.appendChild(linkWrapper);
+
+  // Appending card to project div
+  projectDiv.appendChild(pcard)
 
 } 
 
