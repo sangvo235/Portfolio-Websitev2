@@ -228,7 +228,6 @@ a {
 }
 
 /* Project Section Styling */
-
 .projects {
     width: 100vw;
     max-width: 100%;    
@@ -238,9 +237,13 @@ a {
     justify-content: space-around;
     align-items: center;
     min-height: 100vh;
-    height: 400vh;
+    height: 330vh;
     position: absolute;
     z-index: 2;
+}
+
+.projects > h1 {
+    font-size: 6em;
 }
 
 .pcard {

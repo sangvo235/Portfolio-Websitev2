@@ -43,6 +43,11 @@ for (const project of projects){
   // wrapper div - card
   var pcard = document.createElement("div");
   pcard.className = "pcard";
+  pcard.setAttribute("data-aos", "fade-down-right");
+  pcard.setAttribute("data-aos-offset", "175");
+  pcard.setAttribute("data-aos-delay", "50");
+  pcard.setAttribute("data-aos-duration", "1000");
+  pcard.setAttribute("data-aos-easing", "ease-in-out-sine");
 
   // project titles
   var title = document.createElement("h2");
