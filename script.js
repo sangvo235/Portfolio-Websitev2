@@ -7,6 +7,13 @@ description: JavaScript file for index.html */
 let projects = [ {
   name: "Interactive Quiz Platform",
   image: "images/interactive_quiz.png",
+  tech: "images/html_logo.svg", 
+  tech1: "images/css_logo.svg",
+  tech2: "images/js_logo.svg",
+  tech3: "images/python_logo.svg", 
+  tech4: "images/bootstrap_logo.svg",
+  tech5: "images/django_logo.svg",
+  tech6: "images/figma_logo.svg", 
   description: "Co-created an Interactive Quiz Platform that demonstrates a full-stack application. \
   Achieved HD through collaboration and implementation of the agile process. \
   Integrated frameworks such as Bootstrap and Django.",
@@ -16,9 +23,13 @@ let projects = [ {
 {
   name: "Portfolio Website",
   image: "images/portfolio_website.png",
-  tech: "images/html_logo.svg", 
-  tech1: "images/css_logo.svg",
-  tech2: "images/js_logo.svg",
+  tech: "images/nothing.png", 
+  tech1: "images/nothing.png",
+  tech2: "images/html_logo.svg", 
+  tech3: "images/css_logo.svg",
+  tech4: "images/js_logo.svg",
+  tech5: "images/nothing.png",
+  tech6: "images/nothing.png", 
   description: "Portfolio website demonstrating comprehension on front-end web development. \
   Includes parallax scrolling, hamburger menu and dynamic cross device compatibility. \
   Built with pure HTML/CSS/JS.", 
@@ -28,6 +39,13 @@ let projects = [ {
 {
   name: "Dynamic Website",
   image: "images/asp.net.png",
+  tech: "images/nothing.png", 
+  tech1: "images/html_logo.svg", 
+  tech2: "images/css_logo.svg",
+  tech3: "images/php_logo.svg",
+  tech4: "images/mysql_logo.svg", 
+  tech5: "images/nothing.png",
+  tech6: "images/nothing.png",
   description: "Dynamic website implementing server-side PHP scripts to process and store quiz-attempt data.\
   Additionally built in enhancements such as login for admin to sort, edit and delete quiz results illustrating MySQL knowledge.",
   link: "",
@@ -64,12 +82,18 @@ for (const project of projects){
   // project tech
   var tech = document.createElement("img");
   tech.src = project["tech"];
-
   var tech1 = document.createElement("img");
   tech1.src = project["tech1"];
-
   var tech2 = document.createElement("img");
   tech2.src = project["tech2"];
+  var tech3 = document.createElement("img");
+  tech3.src = project["tech3"];
+  var tech4 = document.createElement("img");
+  tech4.src = project["tech4"];
+  var tech5 = document.createElement("img");
+  tech5.src = project["tech5"];
+  var tech6 = document.createElement("img");
+  tech6.src = project["tech6"];
 
   // project desciption wrapper
   var descriptionBox = document.createElement("div");
@@ -106,6 +130,10 @@ for (const project of projects){
   projectTech.appendChild(tech);
   projectTech.appendChild(tech1);
   projectTech.appendChild(tech2);
+  projectTech.appendChild(tech3);
+  projectTech.appendChild(tech4);
+  projectTech.appendChild(tech5);
+  projectTech.appendChild(tech6);
   descriptionBox.appendChild(description);
   link.appendChild(linkName);
   github.appendChild(githubName);
