@@ -6,6 +6,22 @@ description: JavaScript file for index.html */
 // Project Array List
 let projects = [ 
 {
+  name: "Bus Replacement Mobile App",
+  image: "images/asp.net.png",
+  tech: "images/nothing.png", 
+  tech1: "images/html_logo.svg", 
+  tech2: "images/css_logo.svg",
+  tech3: "images/php_logo.svg",
+  tech4: "images/mysql_logo.svg", 
+  tech5: "images/nothing.png",
+  tech6: "images/nothing.png",
+  description: "A Mobile App that aims to digitalise the daily tasks of bus replacement ground staff. \
+  Includes retrieval of incoming bus ETA, bus capacity and updating passenger counts. \
+  Built with React Native, Tailwind, Google Firebase/API and hosted on Expo.",
+  link: "",
+  github: "https://github.com/sangvo235/ASP.NET_Website_PHP"
+},
+{
   name: "Interactive Quiz Platform",
   image: "images/interactive_quiz.png",
   tech: "images/html_logo.svg", 
@@ -38,20 +54,21 @@ let projects = [
   github: "https://github.com/sangvo235/sangvo235.github.io"
 },
 {
-  name: "Dynamic Website",
-  image: "images/asp.net.png",
+  name: "Java GUI Parking Spot System",
+  image: "images/portfolio_website.png",
   tech: "images/nothing.png", 
-  tech1: "images/html_logo.svg", 
-  tech2: "images/css_logo.svg",
-  tech3: "images/php_logo.svg",
-  tech4: "images/mysql_logo.svg", 
+  tech1: "images/nothing.png",
+  tech2: "images/html_logo.svg", 
+  tech3: "images/css_logo.svg",
+  tech4: "images/js_logo.svg",
   tech5: "images/nothing.png",
-  tech6: "images/nothing.png",
-  description: "Dynamic website implementing server-side PHP scripts to process and store quiz-attempt data.\
-  Additionally built in enhancements such as login for admin to sort, edit and delete quiz results illustrating MySQL knowledge.",
-  link: "",
-  github: "https://github.com/sangvo235/ASP.NET_Website_PHP"
-}]
+  tech6: "images/nothing.png", 
+  description: "Utilised Java Swing to build a GUI to allow users to search, display parking time, add or delete parking slots/cars. \
+  Displays strong OOP knowledge through implementation of advanced features and underlying code.",
+  link: "https://github.com/sangvo235/Parking_Slot_System_GUI",
+  github: "https://github.com/sangvo235/Parking_Slot_System_GUI"
+}
+]
 
 // creating project div
 var projectDiv = document.getElementById("projects");

@@ -238,7 +238,7 @@ a {
     justify-content: space-around;
     align-items: center;
     min-height: 100vh;
-    height: 330vh;
+    height: 430vh;
     position: absolute;
     z-index: 2;
 }
@@ -329,7 +329,7 @@ a {
 
 /* Page extension due to parallax scroll page pin */
 .hi {
-    min-height: 250vh; 
+    min-height: 360vh; 
     background-color: #102044;
     width: 100%;
 }
@@ -591,26 +591,7 @@ a {
    /* Project Section */
     .pcard {
         height: 41em;
-        margin-top: 2em;
-    }
-
-    .pcard > h2 {
-        font-size: 70%;
-    }
-    
-    .cardProjectTech > img {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .cardDescriptionBox > p {
-        font-size: 85%;
-    }
-    
-    .cardLinkWrapper {
-        margin: 1.7rem 0 1rem 9rem;
-        width: 22rem;
-        height: 20rem;
+        padding-bottom: 10em;
     }
 
     /* Experience Section */
