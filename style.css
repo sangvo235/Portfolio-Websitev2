@@ -579,3 +579,50 @@ a {
     font-weight: bold;
     color:#999;
 }
+
+/* Resizing for MacBook Pro 13-inch width (1440px) */
+@media(max-width:1440px) { 
+    
+    /* Home Page */
+    .main-title {
+        font-size: 3.5rem;
+    }  
+
+    /* Experience Section */
+    .expCard {
+        height: 13rem;
+    }    
+    
+    .expCard > img {
+        height: 12.8rem;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    /* Contact Me Section */
+    .about {
+        min-height: 120vh;
+    }
+
+    .card {
+        margin: 0 0 0 31.5%;
+    }
+
+    .card-bio {
+        padding: 1rem 1rem 2.5rem 1rem;
+    }
+}
+
+/* Resizing with MacBook Pro 13-inch height (800px) */
+@media(max-height: 800px) {
+
+    .experience {
+        min-height: 170vh;
+        padding-top: 30vh;
+    }
+
+    .about {
+        min-height: 130vh;
+    }
+
+}
