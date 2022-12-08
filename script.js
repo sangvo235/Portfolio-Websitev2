@@ -4,7 +4,8 @@ last modified: 6/12/22
 description: JavaScript file for index.html */
 
 // Project Array List
-let projects = [ {
+let projects = [ 
+{
   name: "Interactive Quiz Platform",
   image: "images/interactive_quiz.png",
   tech: "images/html_logo.svg", 
@@ -50,8 +51,7 @@ let projects = [ {
   Additionally built in enhancements such as login for admin to sort, edit and delete quiz results illustrating MySQL knowledge.",
   link: "",
   github: "https://github.com/sangvo235/ASP.NET_Website_PHP"
-}
-]
+}]
 
 // creating project div
 var projectDiv = document.getElementById("projects");
@@ -151,6 +151,93 @@ for (const project of projects){
   projectDiv.appendChild(pcard)
 
 } 
+
+// Experience Array List
+let experience = [
+{
+  expImage: "images/swinburne_logo.jpg",
+  company: "Swinburne University",
+  role: "Master of Information Technology, Software Development",
+  date: "Feb 2022 - Nov 2023 (Expected Graduation)",
+  description: "Grade: 4.0 GPA | 85.625 WAM"
+},
+{ 
+  expImage: "images/deloitte_logo.jpg",
+  company: "Deloitte",
+  role: "Digital & Technology Risk Intern",
+  date: "Nov 2022 - Current",
+  description: "Assisted team with analysing client's Disaster Recovery and Business Continuity Plans \
+  to provide senior stakeholder's with areas to improve operational risk resilence and technology."
+},
+{
+  expImage: "images/datacom_logo.png",
+  company: "Datacom",
+  role: "Service Desk Analyst",
+  date: "Feb 2022 - Aug 2022",
+  description: "Achieved all monthly KPIs demonstrating an efficiency within analysing problem, \
+  compiling data, and determining a comprehensive recommendation for end users."
+},
+{
+  expImage: "images/monash_logo.jpg",
+  company: "Monash University",
+  role: "Bachelor of Commerce, Finance & Actuarial Studies",
+  date: "Feb 2017 - Nov 2021",
+  description: "Grade: Distinction"
+}]
+
+// creating experience div
+var experienceDiv = document.getElementById("experience");
+
+for (const exp of experience) {
+
+  // experience wrapper div
+  var expCard = document.createElement("div");
+  expCard.className = "expCard";
+  expCard.setAttribute("data-aos", "fade-down-right");
+  expCard.setAttribute("data-aos-offset", "175");
+  expCard.setAttribute("data-aos-delay", "50");
+  expCard.setAttribute("data-aos-duration", "1000");
+  expCard.setAttribute("data-aos-easing", "ease-in-out-sine");
+
+  // experience image 
+  var expImg = document.createElement("img");
+  expImg.src = exp["expImage"];
+  expImg.className = "expCardImg";
+
+  // experience desciption wrapper
+  var experienceBox = document.createElement("div");
+  experienceBox.className = "cardExperienceBox";
+
+  // experience company
+  var company = document.createElement("h2");
+  company.textContent = exp["company"];
+
+  // experience role
+  var role = document.createElement("h3");
+  role.textContent = exp["role"];
+
+  // experience date
+  var date = document.createElement("p");
+  date.textContent = exp["date"];
+
+  // experience description
+  var description = document.createElement("p");
+  description.textContent = exp["description"];
+  
+  // Appending experience description wrapper children
+  experienceBox.appendChild(company);
+  experienceBox.appendChild(role);
+  experienceBox.appendChild(date);
+  experienceBox.appendChild(description);
+
+  // Appending experience card components 
+  expCard.appendChild(expImg);
+  expCard.appendChild(experienceBox);
+
+  // Appending card to project div
+  experienceDiv.appendChild(expCard)
+
+}
 
 // Scrolling Logic for Nav Bar
 $(document).ready(function(){

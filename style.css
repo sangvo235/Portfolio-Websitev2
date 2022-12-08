@@ -241,11 +241,9 @@ a {
     position: absolute;
     z-index: 2;
 }
-
 .projects > h1 {
-    font-size: 6em;
+    font-size: 5em;
 }
-
 .pcard {
     display: flex;
     background-color: white;
@@ -255,17 +253,15 @@ a {
     padding: 1vw 1vw 2vw 1vw;
     border: 10px solid #97ade6;
     border-radius: 4px;
-    box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.3);
+    box-shadow: 3rem 3rem rgba(0,0,0,0.3);
 }
-
 .pcard > h2 {
     display: block;
     color: black;
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
-
 .pcard > img {
     width: 100%;
     height: 100%;
@@ -275,18 +271,15 @@ a {
     border-radius: 4px;
     margin-bottom: 10px;
 }
-
 .cardProjectTech {
     margin: 0.3em;
     text-align: center;
 }
-
 .cardProjectTech > img {
     object-fit: scale-down;
     width: 50px;
     height: 50px; 
 }
-
 .cardDescriptionBox {
     display: flex;
     flex-direction: row;
@@ -294,14 +287,12 @@ a {
     justify-content: center;
     align-items: center;
 }
-
 .cardDescriptionBox > p {
     max-height: 100%;
     width: 90%;
     font-size: 2vmin;
     color: black;
 }
-
 .cardLinkWrapper {
     gap: 50px;
     display: flex;
@@ -329,32 +320,38 @@ a {
 .cardLinkWrapper > a:nth-child(2) > h3 {
     color: black;
 } 
-
 /* Logic for changing colours when hovering over text/icon
     Use !important to overide previous black/blue colour */
 .cardLinkWrapper > a:hover, .cardLinkWrapper > a:hover > h3 {
     color: rgb(248, 203, 126) !important;
 }
 
+/* Page extension due to parallax scroll page pin */
+.hi {
+    min-height: 250vh; 
+    background-color: #102044;
+    width: 100%;
+}
+
 /* Experience Section Styling */
 .experience {
-    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vh 20vw;
+    width: 100vw;
+    max-width: 100%;
+    height: 200vh;
     background-color: #102044;
-    min-height: 100vh;
 }
-
 .experience h1 {
-    font-size: 4rem;
+    font-size: 5em;
     padding-top: 5%;
-    padding-bottom: 4%;
+    padding-bottom: 2.3em;
     text-align: center;
 }
-
-.experience-1, .experience-2, .experience-3 {
-    margin: 0 25% 0 25%;
-}
-
-.experience-card {
+.expCard {
     width: 100%;
     height: 13rem;
     background-color: white;
@@ -364,31 +361,25 @@ a {
     outline: thick solid #97ade6;
     float: left;
 }
-
-.image-wrapper3 {
+.expCard > img {
     float: left;
     margin-right: 30px;
-}
-
-.image-wrapper3 img {
     height: 12.7rem;
     width: 200px;
     object-fit: cover;
 }
-
-.experience-bio p {
+.cardExperienceBox > p {
     color: black;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
     font-size: 1.2rem;
 }
-
-.experience-bio h2 {
+.cardExperienceBox > h2 {
     color: black;
     font-size: 1.5rem;
+    padding-top: 10px;
 }
-
-.experience-bio h3 {
+.cardExperienceBox > h3 {
     color: rgb(240, 164, 24);
     font-size: 1.3rem;
 }
