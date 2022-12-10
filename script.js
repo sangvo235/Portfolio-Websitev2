@@ -8,15 +8,13 @@ let projects = [
 {
   name: "Bus Replacement Mobile App",
   image: "images/asp.net.png",
-  tech: "images/nothing.png", 
-  tech1: "images/html_logo.svg", 
-  tech2: "images/css_logo.svg",
-  tech3: "images/php_logo.svg",
-  tech4: "images/mysql_logo.svg", 
-  tech5: "images/nothing.png",
+  tech1: "images/nothing.png", 
+  tech2: "images/react_logo.svg", 
+  tech3: "images/tailwind_logo.svg",
+  tech4: "images/firebase_logo.svg",
+  tech5: "images/figma_logo.svg", 
   tech6: "images/nothing.png",
-  description: "A Mobile App that aims to digitalise the daily tasks of bus replacement ground staff. \
-  Includes retrieval of incoming bus ETA, bus capacity and updating passenger counts. \
+  description: "Mobile app that digitalises the daily tasks of bus replacement ground staff by retrieving real-time data. \
   Built with React Native, Tailwind, Google Firebase/API and hosted on Expo.",
   link: "",
   github: "https://github.com/sangvo235/ASP.NET_Website_PHP"
@@ -24,28 +22,25 @@ let projects = [
 {
   name: "Interactive Quiz Platform",
   image: "images/interactive_quiz.png",
-  tech: "images/html_logo.svg", 
-  tech1: "images/css_logo.svg",
-  tech2: "images/js_logo.svg",
-  tech3: "images/python_logo.svg", 
+  tech1: "images/html_logo.svg", 
+  tech2: "images/css_logo.svg",
+  tech3: "images/js_logo.svg",
   tech4: "images/bootstrap_logo.svg",
   tech5: "images/django_logo.svg",
   tech6: "images/figma_logo.svg", 
-  description: "Co-created an Interactive Quiz Platform that demonstrates a full-stack application. \
-  Achieved HD through collaboration and implementation of the agile process. \
-  Integrated frameworks such as Bootstrap and Django.",
+  description: "A full-stack quiz platform/application aimed at increasing gamification. \
+  Incorporated agile methodologies (eg. sprint cycles) and key frameworks such as Bootstrap and Django.",
   link: "https://github.com/JATTYz/Quiz-Application-Django-Project",
   github: "https://github.com/JATTYz/Quiz-Application-Django-Project"
 },
 {
   name: "Portfolio Website",
   image: "images/portfolio_website.png",
-  tech: "images/nothing.png", 
   tech1: "images/nothing.png",
   tech2: "images/html_logo.svg", 
   tech3: "images/css_logo.svg",
   tech4: "images/js_logo.svg",
-  tech5: "images/nothing.png",
+  tech5: "images/git_logo.svg",
   tech6: "images/nothing.png", 
   description: "Portfolio website demonstrating comprehension on front-end web development. \
   Includes parallax scrolling, hamburger menu and dynamic cross device compatibility. \
@@ -55,16 +50,15 @@ let projects = [
 },
 {
   name: "Java GUI Parking Spot System",
-  image: "images/portfolio_website.png",
-  tech: "images/nothing.png", 
+  image: "images/parking_system.png",
   tech1: "images/nothing.png",
-  tech2: "images/html_logo.svg", 
-  tech3: "images/css_logo.svg",
-  tech4: "images/js_logo.svg",
+  tech2: "images/nothing.png", 
+  tech3: "images/java_logo.svg",
+  tech4: "images/bluej_logo.png",
   tech5: "images/nothing.png",
   tech6: "images/nothing.png", 
-  description: "Utilised Java Swing to build a GUI to allow users to search, display parking time, add or delete parking slots/cars. \
-  Displays strong OOP knowledge through implementation of advanced features and underlying code.",
+  description: "A parking slot system transformed from console (text-based) to GUI through implementing Java Swing. \
+  Enabling users to search, display parking time, add or delete parking slots/cars.",
   link: "https://github.com/sangvo235/Parking_Slot_System_GUI",
   github: "https://github.com/sangvo235/Parking_Slot_System_GUI"
 }
@@ -97,8 +91,6 @@ for (const project of projects){
   projectTech.className = "cardProjectTech";
 
   // project tech
-  var tech = document.createElement("img");
-  tech.src = project["tech"];
   var tech1 = document.createElement("img");
   tech1.src = project["tech1"];
   var tech2 = document.createElement("img");
@@ -144,7 +136,6 @@ for (const project of projects){
   githubName.textContent = "Github";
   
   // Appending individual components  
-  projectTech.appendChild(tech);
   projectTech.appendChild(tech1);
   projectTech.appendChild(tech2);
   projectTech.appendChild(tech3);
@@ -183,16 +174,14 @@ let experience = [
   company: "Deloitte",
   role: "Digital & Technology Risk Intern",
   date: "Nov 2022 - Current",
-  description: "Assisted team with analysing client's Disaster Recovery and Business Continuity Plans \
-  to provide senior stakeholder's with areas to improve operational risk resilence and technology."
+  description: "- Analysing Disaster Recovery & Business Continuity Plans to optimise client's risk resilence."
 },
 {
   expImage: "images/datacom_logo.png",
   company: "Datacom",
   role: "Service Desk Analyst",
   date: "Feb 2022 - Aug 2022",
-  description: "Achieved all monthly KPIs demonstrating an efficiency within analysing problem, \
-  compiling data, and determining a comprehensive recommendation for end users."
+  description: "- Managing IT incidents and service request to provide technical support for end users."
 },
 {
   expImage: "images/monash_logo.jpg",
