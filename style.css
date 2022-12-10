@@ -598,8 +598,24 @@ a {
     
    /* Project Section */
     .pcard {
-        height: 41em;
+        height: 85vmin;
         padding-bottom: 10em;
+    }
+
+    .pcard > h2 {
+        font-size: 2rem;
+    }
+
+    .pcard > img {
+        height: 65%;
+    }
+    
+    .pcard:nth-child(2) {
+        height: 95vmin;
+    }
+    .pcard:nth-child(2) > img {
+        width: 40%;
+        height: 73%;
     }
 
     /* Experience Section */
@@ -631,12 +647,15 @@ a {
 @media(max-height: 800px) {
 
     .experience {
-        min-height: 170vh;
+        min-height: 220vh;
         padding-top: 30vh;
     }
 
     .about {
-        min-height: 130vh;
+        min-height: 170vh;
     }
 
+    .hi {
+        min-height: 365vh; 
+    }
 }
