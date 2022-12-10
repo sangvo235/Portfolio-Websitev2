@@ -16,8 +16,8 @@ let projects = [
   tech6: "images/nothing.png",
   description: "Mobile app that digitalises the daily tasks of bus replacement ground staff by retrieving real-time data. \
   Built with React Native, Tailwind, Google Firebase/API and hosted on Expo.",
-  link: "",
-  github: "https://github.com/sangvo235/ASP.NET_Website_PHP"
+  link: "https://github.com/JATTYz/TDP-TEAM4-2022",
+  github: "https://github.com/JATTYz/TDP-TEAM4-2022"
 },
 {
   name: "Interactive Quiz Platform",

@@ -659,3 +659,147 @@ a {
         min-height: 365vh; 
     }
 }
+
+/* Resizing for mobile devices & smaller tablets */
+@media(max-width:920px) {
+
+    /* Home Page */
+    .hi {
+        min-height: 170vh; 
+        background-color: #102044;
+        width: 100%;
+    }
+    .container img {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .main-title {
+        font-size: 1.6rem;
+        top: 30%;
+        left: 30%;
+    }
+
+    /* Project Section */
+    .projects {
+        height: 270vh;
+    }
+    .projects > h1 {
+            font-size: 3rem;
+    }
+    .pcard {
+        height: 100vmin;
+    }
+    .pcard > h2 {
+        font-size: 1rem;
+    }
+    .pcard > img {
+        width: 100%;
+    }
+    .pcard:nth-child(2) {
+        height: 102vmin;
+    }
+    .pcard:nth-child(2) > img {
+        width: 40%;
+        height: 65%;
+    }
+    .cardProjectTech > img {
+        object-fit: scale-down;
+        width: 30px;
+        height: 30px; 
+    }
+    .cardDescriptionBox > p {
+        font-size: 1.9vmin;
+    }
+    .cardLinkWrapper > a {
+        font-size: 1.5rem;
+    }
+    .cardLinkWrapper > a > h3 {
+        font-size: 0.5rem;
+    }
+
+    /* Experience Section */
+    .experience {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20vh 20vw;
+        width: 100vw;
+        max-width: 100%;
+        height: 155vh;
+        background-color: #102044;
+    }
+    .experience h1 {
+        font-size: 3rem; 
+    }
+    
+    .expCard {
+        width: 130%;
+        height: 10rem;
+        background-color: white;
+        border: 2px solid #97ade6;
+        border-radius: 4px;
+        box-shadow: 3rem 3rem rgba(0,0,0,0.3);
+        outline: thick solid #97ade6;
+        float: left;
+    }
+    .expCard > img {
+        height: 9.7rem;
+        width: 120px;
+        margin-right: 10px;
+    }
+    .cardExperienceBox > p {
+        font-size: 0.6rem; 
+    }
+    .cardExperienceBox > h2 {
+        font-size: 0.9rem;
+        padding-top: 10px;
+    }
+    .cardExperienceBox > h3 {
+        font-size: 0.6rem;
+    }
+
+    /* Contact Me Section */
+    .about h1 {
+        font-size: 3rem;
+    }
+    .card {
+        width: 18rem;
+        margin: 0 20% 0 11%;
+    }
+    .card-bio {
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .image-wrapper {
+        margin-top: 2em;
+        width: 30rem;
+        height: 6rem;
+    }
+    .card-info h4 {
+        font-size: 1.5rem;
+    }
+    .card-info p {
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+    }
+    .card-btn {
+        right: 4rem;
+        font-size: 1rem;
+    }
+    .change .card-btn {
+        width: 4rem;
+        height: 4rem;
+        right: -2rem;
+        bottom: -2rem;
+        border-radius: 50%;
+    }
+    .card-contact h5 {
+        font-size: 1rem;
+    }
+    .card-out {
+        padding: 0.5rem;
+    }
+}
