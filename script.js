@@ -7,7 +7,7 @@ description: JavaScript file for index.html */
 let projects = [ 
 {
   name: "Bus Replacement Mobile App",
-  image: "images/asp.net.png",
+  image: "images/bus_app.gif",
   tech1: "images/nothing.png", 
   tech2: "images/react_logo.svg", 
   tech3: "images/tailwind_logo.svg",
@@ -21,7 +21,7 @@ let projects = [
 },
 {
   name: "Interactive Quiz Platform",
-  image: "images/interactive_quiz.png",
+  image: "images/quiz_platform.png",
   tech1: "images/html_logo.svg", 
   tech2: "images/css_logo.svg",
   tech3: "images/js_logo.svg",
